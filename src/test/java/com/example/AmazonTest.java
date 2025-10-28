@@ -29,6 +29,7 @@ public class AmazonTest extends BasePage {
             driver.findElement(By.xpath("//input[@id=\"signInSubmit\"]")).click();
             Select s=new Select(driver.findElement(By.id("searchDropdownBox")));
             s.selectByValue("search-alias=beauty");
+            
             System.out.println("Category Type Selected from DropDown"+" in "+threadName);
             driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("Foundation");
             driver.findElement(By.xpath("//input[@id=\"nav-search-submit-button\"]")).click();
